@@ -131,12 +131,8 @@ def search_user():
     with open('bank_data.json') as data_file:
         data = json.load(data_file)
         if user_name in data:
-            # first_name_af = data[user_name]['First Name']
-            # first_name_entry.insert(0, first_name_af)
             middle_name_af = data[user_name]['Middle Name']
             middle_name_entry.insert(0, middle_name_af)
-            # surname_name_af = data[user_name]['Surname']
-            # surname_entry.insert(0, surname_name_af)
             phone_no_af = data[user_name]['Phone No']
             phone_number_entry.insert(0, phone_no_af)
             email_af = data[user_name]['Email']
@@ -145,13 +141,10 @@ def search_user():
             relative_phone_number_entry.insert(0, relative_ph_af)
             blood_group_af = data[user_name]['Blood Group']
             blood_group_entry.insert(0, blood_group_af)
-            # last_v_af = data[user_name]['Last Visit Symptoms']
             height_af = data[user_name]['Height']
             height_entry.insert(0, height_af)
             weight_af = data[user_name]['Weight']
             weight_kg_entry.insert(0, weight_af)
-            # exercise_af = data[user_name]['Exercise Status']
-            # food_af = data[user_name]['Food']
             address_af = data[user_name]['Address']
             address_entry.insert(0, address_af)
 # save_to_csv()
@@ -240,16 +233,6 @@ def save_data():
     Initially this code was implemented to check whether user enters value or not, if he lefts entry blank
     then need to add comma in between two entries.
     """
-    # Check Presence of Data inside Field
-    # data_list = [get_first_name, get_middle_name, get_surname, get_phone_no, get_email,
-    #              get_relative_phone, get_other_symptoms, get_blood_group, get_sugar_level,
-    #              get_blood_pressure, get_weight, get_height, get_address, get_symptoms_cough, get_symptoms_fever,
-    #              get_symptoms_cold, get_symptoms_body_pain, get_birth_date, person_gender, food_type,
-    #              exercise_status, covid_status, vaccine_status, vision_prob_, color_night_bn]
-    # for i in data_list:
-    #     # print(len(i))
-    #     if len(i) == 0:
-    #         i = ','
 
 # ------------------------- Save all user entered data in Text File ------------------------------------------------- #
     with open("bank_data.txt", 'a') as data:
